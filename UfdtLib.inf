@@ -1,0 +1,19 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = UfdtLib
+  FILE_GUID                      = FF74D04D-FBB5-4332-9E5E-F4DF5F0B5C6C
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  LIBRARY_CLASS                  = UfdtLib
+
+[Packages]
+  droidboot.dec
+  MdePkg/MdePkg.dec
+
+[Sources]
+  ufdt_convert.c
+  ufdt_node.c
+  ufdt_node_pool.c
+  ufdt_overlay.c
+  ufdt_prop_dict.c
+  sysdeps/libufdt_sysdeps_vendor.c
