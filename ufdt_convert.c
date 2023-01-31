@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-#include "libufdt.h"
+#include "droidboot_libufdt.h"
 
-#include "ufdt_node_pool.h"
-#include "ufdt_prop_dict.h"
+#include "droidboot_ufdt_node_pool.h"
+#include "droidboot_ufdt_prop_dict.h"
 
 struct ufdt *ufdt_construct(void *fdtp, struct ufdt_node_pool *pool) {
   (void)(pool); /* unused parameter */

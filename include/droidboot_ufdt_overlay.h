@@ -17,7 +17,7 @@
 #ifndef UFDT_OVERLAY_H
 #define UFDT_OVERLAY_H
 
-#include <libfdt.h>
+#include <droidboot_libfdt.h>
 
 /* Given a buffer in RAM containing the contents of a .dtb file,
  * it initializes an FDT in-place and returns a pointer to the

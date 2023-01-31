@@ -17,8 +17,8 @@
 #ifndef LIBUFDT_H
 #define LIBUFDT_H
 
-#include "libufdt_sysdeps.h"
-#include "ufdt_types.h"
+#include "droidboot_libufdt_sysdeps.h"
+#include "droidboot_ufdt_types.h"
 
 /*
  * BEGIN of ufdt_node methods

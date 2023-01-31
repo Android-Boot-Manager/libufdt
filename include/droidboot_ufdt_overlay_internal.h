@@ -17,7 +17,7 @@
 #ifndef UFDT_OVERLAY_INTERNAL_H
 #define UFDT_OVERLAY_INTERNAL_H
 
-#include <ufdt_types.h>
+#include <droidboot_ufdt_types.h>
 
 void *ufdt_get_fixup_location(struct ufdt *tree, const char *fixup);
 int ufdt_do_one_fixup(struct ufdt *tree, const char *fixups, int fixups_len,

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-#include "libufdt.h"
+#include "droidboot_libufdt.h"
 
-#include "ufdt_node_pool.h"
+#include "droidboot_ufdt_node_pool.h"
 
 struct ufdt_node *ufdt_node_construct(void *fdtp, fdt32_t *fdt_tag_ptr,
                                       struct ufdt_node_pool *pool) {

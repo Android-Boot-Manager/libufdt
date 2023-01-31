@@ -27,10 +27,10 @@
  * SUCH DAMAGE.
  */
 
-#include "ufdt_overlay.h"
-#include "libufdt.h"
-#include "ufdt_node_pool.h"
-#include "ufdt_overlay_internal.h"
+#include "droidboot_ufdt_overlay.h"
+#include "droidboot_libufdt.h"
+#include "droidboot_ufdt_node_pool.h"
+#include "droidboot_ufdt_overlay_internal.h"
 
 /*
  * The original version of fdt_overlay.c is slow in searching for particular

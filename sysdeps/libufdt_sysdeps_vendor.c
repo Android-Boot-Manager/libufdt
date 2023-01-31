@@ -1,7 +1,8 @@
-#include "libufdt_sysdeps.h"
+#include "droidboot_libufdt_sysdeps.h"
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/types.h>
 
 int dto_print(const char *fmt, ...) {

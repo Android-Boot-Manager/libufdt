@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include "libufdt_sysdeps.h"
+#include "droidboot_libufdt_sysdeps.h"
 
 #include <stdarg.h>
 #include <stdio.h>

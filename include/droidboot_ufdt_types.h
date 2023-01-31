@@ -17,7 +17,7 @@
 #ifndef UFDT_TYPES_H
 #define UFDT_TYPES_H
 
-#include <libfdt.h>
+#include <droidboot_libfdt.h>
 
 /* it has type : struct ufdt_node** */
 #define for_each(it, node)                                                       \

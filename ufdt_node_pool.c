@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-#include "ufdt_node_pool.h"
+#include "droidboot_ufdt_node_pool.h"
 
-#include "libufdt_sysdeps.h"
-#include "ufdt_types.h"
+#include "droidboot_libufdt_sysdeps.h"
+#include "droidboot_ufdt_types.h"
 
 /* Define DEBUG_DISABLE_POOL to use dto_malloc and dto_free directly */
 /* #define DEBUG_DISABLE_POOL */

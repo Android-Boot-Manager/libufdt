@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-#include "ufdt_prop_dict.h"
+#include "droidboot_ufdt_prop_dict.h"
 
-#include "libfdt.h"
+#include "droidboot_libfdt.h"
 
-#include "libufdt_sysdeps.h"
+#include "droidboot_libufdt_sysdeps.h"
 
 #define UFDT_PROP_DICT_INIT_SZ 4
 
