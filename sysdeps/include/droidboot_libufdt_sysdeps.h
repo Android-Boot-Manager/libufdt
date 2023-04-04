@@ -25,29 +25,14 @@
 #include <inttypes.h>
 #include <stdbool.h>
 #include <stddef.h>
+#include <stdarg.h>
 #include <stdint.h>
+#include <string.h>
+#include <droidboot_logging.h>
 
-#ifdef DTO_ENABLE_DEBUG
-/* Print functions, used for diagnostics.
- *
- * These have no effect unless FDT_ENABLE_DEBUG is defined.
- */
-#define dto_debug(...)                   \
-  do {                                   \
-    dto_print("DEBUG: %s():", __func__); \
-    dto_print(__VA_ARGS__);              \
-  } while (0)
-#else
-#define dto_debug(...)
-#endif
-
-#define dto_error(...)                   \
-  do {                                   \
-    dto_print("ERROR: %s():", __func__); \
-    dto_print(__VA_ARGS__);              \
-  } while (0)
-
-int dto_print(const char *fmt, ...);
+#define dto_debug(...) droidboot_log(DROIDBOOT_LOG_INFO,__VA_ARGS__)
+#define dto_error(...) droidboot_log(DROIDBOOT_LOG_INFO,__VA_ARGS__)
+#define dto_print(...) droidboot_log(DROIDBOOT_LOG_INFO,__VA_ARGS__)
 
 void dto_qsort(void *base, size_t nmemb, size_t size,
                int (*compar)(const void *, const void *));

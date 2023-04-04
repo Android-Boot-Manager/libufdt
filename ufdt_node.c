@@ -15,7 +15,6 @@
  */
 
 #include "droidboot_libufdt.h"
-
 #include "droidboot_ufdt_node_pool.h"
 
 struct ufdt_node *ufdt_node_construct(void *fdtp, fdt32_t *fdt_tag_ptr,

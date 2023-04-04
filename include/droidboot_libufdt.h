@@ -19,7 +19,8 @@
 
 #include "droidboot_libufdt_sysdeps.h"
 #include "droidboot_ufdt_types.h"
-
+#include <droidboot_logging.h>
+#define dto_print(...) droidboot_log(DROIDBOOT_LOG_INFO,__VA_ARGS__)
 /*
  * BEGIN of ufdt_node methods
  */

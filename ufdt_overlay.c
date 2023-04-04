@@ -389,7 +389,7 @@ static enum overlay_result ufdt_apply_fragment(struct ufdt *tree,
 /*
  * Applies all fragments to the main_tree.
  */
-static int ufdt_overlay_apply_fragments(struct ufdt *main_tree,
+int ufdt_overlay_apply_fragments(struct ufdt *main_tree,
                                         struct ufdt *overlay_tree,
                                         struct ufdt_node_pool *pool) {
   enum overlay_result err;
@@ -560,7 +560,7 @@ static int _ufdt_overlay_fdtps(struct ufdt *main_tree,
   return 0;
 }
 
-static int ufdt_overlay_apply(struct ufdt *main_tree, struct ufdt *overlay_tree,
+int ufdt_overlay_apply(struct ufdt *main_tree, struct ufdt *overlay_tree,
                               size_t overlay_length,
                               struct ufdt_node_pool *pool) {
   if (_ufdt_overlay_fdtps(main_tree, overlay_tree) < 0) {

@@ -1,21 +1,11 @@
 #include "droidboot_libufdt_sysdeps.h"
 
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <sys/types.h>
 
-int dto_print(const char *fmt, ...) {
-  int err;
-
-  va_list ap;
-  va_start(ap, fmt);
-  err = _dvprintf(fmt, ap);
-  va_end(ap);
-
-  return err;
-}
-
+#define dto_print(...) droidboot_log(DROIDBOOT_LOG_INFO,__VA_ARGS__)
 /* Codes from
  * https://android.googlesource.com/platform/bionic.git/+/eclair-release/libc/stdlib/qsort.c
  * Start
